@@ -1,0 +1,237 @@
+#NaN {
+  display: none;
+}
+.wrapper {
+  z-index: 100;
+  opacity: 0.9;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 700px;
+  height: 600px;
+  box-shadow: 0 0 30px silver;
+}
+.wrapper header {
+  height: 50px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wrapper header h1 {
+  font-size: 26px;
+  font-family: '华文彩云';
+  color: pink;
+  margin-left: 10px;
+}
+.wrapper header input {
+  box-sizing: border-box;
+  background-color: #d6d6d6;
+  height: 40px;
+  width: 200px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #da9c9c;
+}
+.wrapper i {
+  position: absolute;
+  right: 25px;
+  top: 17px;
+  color: #9f9f9f;
+}
+.wrapper i:hover {
+  color: pink;
+}
+.wrapper nav {
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wrapper nav * {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: #7b7b7b;
+  box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1), -18px -18px 30px #ffffff;
+  border-radius: 20px;
+  transition: box-shadow 0.2s ease-out;
+}
+.wrapper nav .songs,
+.wrapper nav .likes,
+.wrapper nav .plays {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 #ffffff, inset 18px 18px 30px rgba(0, 0, 0, 0.1), inset -18px -18px 30px #ffffff;
+}
+.wrapper #tipNoShow {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  top: 168px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'iconfont';
+  color: #ff8c9f;
+  text-align: center;
+  line-height: 30px;
+  opacity: 0;
+  transition: 1s opacity ease-in;
+}
+.wrapper #tipShow {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  top: 168px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'iconfont';
+  color: #ff8c9f;
+  text-align: center;
+  line-height: 30px;
+  opacity: 1;
+}
+.wrapper main {
+  height: 344px;
+}
+.wrapper main .snav {
+  height: 50px;
+  position: relative;
+}
+.wrapper main .snav span {
+  position: absolute;
+  display: block;
+  color: #7b7b7b;
+  font-size: 15px;
+  top: 20px;
+}
+.wrapper main .snav .so {
+  left: 143px;
+}
+.wrapper main .snav .si {
+  left: 336px;
+}
+.wrapper main .snav .al {
+  left: 525px;
+}
+.wrapper main ul {
+  overflow: auto;
+  height: 294px;
+}
+.wrapper main ul li {
+  position: relative;
+  height: 50px;
+}
+.wrapper main ul li span,
+.wrapper main ul li i {
+  position: absolute;
+  top: 15px;
+  height: 20px;
+  max-width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrapper main ul li .iconfont {
+  width: fit-content;
+  font-size: 18px;
+}
+.wrapper main ul li .icon-bofang_huaban {
+  left: 50px;
+}
+.wrapper main ul li .icon-xihuan {
+  left: 80px;
+}
+.wrapper main ul li .icon-tianjia1 {
+  left: 110px;
+}
+.wrapper main ul li .iconfont:hover {
+  color: pink;
+}
+.wrapper main ul li .song {
+  left: 143px;
+}
+.wrapper main ul li .singer {
+  left: 336px;
+}
+.wrapper main ul li .album {
+  left: 525px;
+}
+.wrapper main ul li:hover {
+  background-color: #efefef;
+}
+.wrapper main ul li.highlight {
+  background-color: #eee2e2;
+}
+.wrapper footer audio {
+  background-color: #f1f3f4;
+  width: 700px;
+  height: 54px;
+  outline: none;
+}
+body {
+  background-color: rgba(212, 189, 189, 0.363);
+}
+.noselect {
+  user-select: none;
+}
+canvas {
+  padding: 0;
+  margin: 0;
+  opacity: 0.65;
+  position: absolute;
+  top: 0px;
+}
+[v-cloak] {
+  display: none;
+}
+.move {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border: 12px solid #f1f3f4;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-style: none;
+  transform: translateX(356px);
+}
+.move:hover {
+  border: 12px solid pink;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-style: none;
+}
+.comments {
+  width: 0;
+  height: 600px;
+  border-right: 2px solid red;
+  background-color: #f7f7f7;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateX(350px);
+}
+/*# sourceMappingURL=./player.css.map */
